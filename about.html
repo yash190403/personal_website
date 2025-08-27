@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Offbittrialdot';
+      src: url('fonts/OffBitTrial-DotBold.woff') format('woff');
+    }
+
+    body {
+      font-family: monospace;
+      margin: 0;
+      background: url("Texturelabs_Paper_381L.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #000;
+    }
+
+    /* Navigation */
+    header {
+      position: fixed;
+      top: 20px;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      background: white;
+      border-radius: 25px;
+      padding: 10px 30px;
+      margin: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+    }
+
+    nav ul li {
+      font-size: large;
+      margin: 0 60px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-family: 'Offbittrialdot';
+      font-size: medium;
+    }
+
+    /* Layout */
+    .about-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 15px 40px;
+    }
+
+    .about-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+      
+    }
+
+    /* Left Column (Image + Stickers) */
+    .image-column {
+      position: relative;
+      flex: 1 1 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-column img.main-photo {
+      width: 80vh;
+     box-shadow: #000;
+
+    }
+
+    /* Stickers */
+    .sticker {
+      position: absolute;
+      max-width: 120px;
+      height: auto;
+    }
+
+    .sticker.chat { top: -30px; right: -30px; }
+    .sticker.camera { bottom: -50px; left: -40px; }
+    .sticker.phone { bottom: -30px; right: -50px; }
+
+    /* Right Column (Text Box) */
+    .text-column {
+      flex: 1 1 50%;
+    }
+
+    .about-card {
+      background: #e0dbd0;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: left;
+    }
+
+    .about-card h2 {
+      font-family: 'Offbittrialdot';
+      font-size: 2rem;
+      margin-bottom: 2px;
+    }
+
+    .about-card p {
+      font-size: 1.0rem;
+      line-height: 1.2;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-card {
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="d-flex justify-content-center">
+    <nav>
+      <ul class="d-flex flex-wrap justify-content-center">
+        <li><a href="homeagain.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-wrapper">
+
+      <!-- Left: Image + Stickers -->
+      <div class="image-column">
+        <img src="about_page.png" alt="Profile" class="main-photo">
+      </div>
+
+      <!-- Right: Text Box -->
+      <div class="text-column">
+        <div class="about-card">  
+          <h2>About Me</h2>
+          <p>
+          Hi, I'm Yash an imaginative artist and graphic designer with 2 years of experience shaping visual identities and managing creative content for social media. With a background rooted in graphic design and digital branding, my work reflects a balance of storytelling, aesthetics, and strategy.
+
+Beyond traditional design, I am a curious explorer of new creative territories—experimenting with 3D art, video editing, and motion graphics to bring static ideas to life. My pursuit also extends into creative programming and front-end web development, where design meets code to create interactive and immersive experiences.
+
+Driven by curiosity and a love for innovation, I constantly seek out fresh ways to blend art and technology, crafting visuals that not only capture attention but also leave a lasting impact.
+        </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
